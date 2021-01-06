@@ -2,12 +2,17 @@
 <manifest package="com.jimmysun.tangramdemo"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".VApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -29,6 +34,9 @@
             android:name=".virtualview.VirtualViewActivity"
             android:label="VirtualView示例"
             android:screenOrientation="portrait"/>
+
+        <activity android:name=".preview.util.PreviewListActivity"/>
+        <activity android:name=".preview.util.PreviewActivity"/>
     </application>
 
 </manifest>

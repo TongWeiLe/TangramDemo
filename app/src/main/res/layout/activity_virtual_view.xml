@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/home_assert_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="4dp">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/home_assert_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="4dp">
+
+
+
+    </LinearLayout>
+
 </LinearLayout>

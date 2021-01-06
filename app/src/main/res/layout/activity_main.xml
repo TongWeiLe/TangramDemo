@@ -32,4 +32,13 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#E1E4EB"/>
+
+    <TextView
+        android:id="@+id/tv_virtual_demo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="VirtualView演示"
+        android:textSize="15sp"/>
 </LinearLayout>
